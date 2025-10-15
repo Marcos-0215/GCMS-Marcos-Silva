@@ -8,3 +8,4 @@ Exercício prática da disciplina de Gerência de Configuração e Testes, do pr
 Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 
 * Marcos André Souza da Silva (@Marcos-0215, dono)
+* Ramide Dantas (@ramidedantas)
