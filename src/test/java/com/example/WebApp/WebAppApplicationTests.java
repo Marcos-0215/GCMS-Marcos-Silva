@@ -33,6 +33,14 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/marcos"))
 			.andDo(print())
 			.andExpect(status().isOk())
-			.andExpect(content().string(containsString("Hello, Marcs!")));
+			.andExpect(content().string(containsString("Hello, Marcos!")));
+	}
+	
+	@Test
+	public void shouldReturnTestMessage() throws Exception {
+		this.mockMvc.perform(get("/teste"))
+			.andDo(print())
+			.andExpect(status().isOk())
+			.andExpect(content().string(containsString("Olá. Testando...")));
 	}
 }
