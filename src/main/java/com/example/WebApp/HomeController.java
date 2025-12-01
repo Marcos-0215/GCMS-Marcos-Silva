@@ -20,6 +20,6 @@ public class HomeController {
 	
 	@RequestMapping("/teste")
 	public @ResponseBody String greetingTeste() {
-		return "Olá. Testando...";
+		return "Olá. Sou uma copia";
 	}
 }
