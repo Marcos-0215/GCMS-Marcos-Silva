@@ -45,10 +45,20 @@ class WebAppApplicationTests {
 	}
 	
 	@Test
+<<<<<<< HEAD
 	public void shouldReturnHotfixMessage() throws Exception {
 	    mockMvc.perform(get("/hotfix"))
 	        .andExpect(status().isOk())
 	        .andExpect(content().string("Hotfix funcionando!"));
 	}
 
+=======
+	public void ShouldReturnHotfixMessage() throws Exception {
+	    this.mockMvc.perform(get("/hotfix"))
+	            .andExpect(status().isOk())
+	            .andExpect(content().string("Hotfix funcionando!"));
+	}
+
+	
+>>>>>>> hotfix
 }
