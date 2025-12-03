@@ -1,6 +1,12 @@
+## Added for Practice 3 ##
+*.class
+*.lock
+*.jar
+
 HELP.md
 .gradle
 build/
+
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -36,7 +42,3 @@ out/
 ### VS Code ###
 .vscode/
 
-## Added for Practice 3 ##
-*.class
-*.lock
-*.jar
