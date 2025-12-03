@@ -27,5 +27,6 @@ public class HomeController {
 	public @ResponseBody String hotfixEndpoint() {
 	    return "Hotfix funcionando!";
 	}
+	
 
 }
