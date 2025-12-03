@@ -33,7 +33,7 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/marcos"))
 			.andDo(print())
 			.andExpect(status().isOk())
-			.andExpect(content().string(containsString("Hello, Marcos! Testando original.")));
+			.andExpect(content().string(containsString("Hello, Marcos!")));
 	}
 	
 	@Test
@@ -41,24 +41,14 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/teste"))
 			.andDo(print())
 			.andExpect(status().isOk())
-			.andExpect(content().string(containsString("Olá. Testando...")));
+			.andExpect(content().string(containsString("Olá. Sou uma copia")));
 	}
 	
 	@Test
-<<<<<<< HEAD
 	public void shouldReturnHotfixMessage() throws Exception {
 	    mockMvc.perform(get("/hotfix"))
 	        .andExpect(status().isOk())
 	        .andExpect(content().string("Hotfix funcionando!"));
 	}
 
-=======
-	public void ShouldReturnHotfixMessage() throws Exception {
-	    this.mockMvc.perform(get("/hotfix"))
-	            .andExpect(status().isOk())
-	            .andExpect(content().string("Hotfix funcionando!"));
-	}
-
-	
->>>>>>> hotfix
 }
